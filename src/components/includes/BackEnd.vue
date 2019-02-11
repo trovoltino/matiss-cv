@@ -1,15 +1,17 @@
 <template>
-  <div class="logo">
-    <div class="logo-container">
-        <img class="m-logo" src="../assets/matiss-logo.svg" alt="matiss-logo" width="200px" height="200px">
-        <p class="m">MZ</p>
-    </div>
+  <div class="backend">
+    <ul>
+      <li>Laravel</li>
+      <li>PHP</li>
+      <li>MYSQL</li>
+      
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Signup',
+  name: 'Backend',
   props: {
     msg: String
   }
