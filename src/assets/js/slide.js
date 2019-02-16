@@ -1,1 +1,1 @@
-console.log('You just clicked login button');
+console.log('Hello to my app');
