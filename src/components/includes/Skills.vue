@@ -53,7 +53,7 @@ li {
   list-style-type: none;
 }
   .skills {
-    background: rgb(184, 255, 228);
+    background: rgb(197, 197, 197);
     display: flex;
     flex-direction: column;
     min-width: 450px;

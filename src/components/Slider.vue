@@ -6,9 +6,17 @@
         </transition>
       </div>
       <div class="left-field">
-        <button class="move-right" @click="component = 'Project', moveRight = true">Want to see projects</button>
+        <h2>Some of my projects</h2>
+        <p>Here is projects source codes as most frontend functional
+          can be seen here.
+        </p>
+        <button class="move-right" @click="component = 'Project', moveRight = true">show projects</button>
       </div>
       <div class="right-field">
+        <h2>better show me cv</h2>
+        <p>Short descriptions of my skills,
+          would not call myself proficient in all of them.
+        </p>
         <button class="move-left" @click="component = 'Skill', moveRight = false">Back to CV</button>
       </div>
       
@@ -39,58 +47,75 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+p {
+  text-align: center;
+  max-width: 70%;
+  margin: 40px auto;
+}
 .slider {
   margin: 0;
   position: relative;
   left: 30px;
   top: 50%;
   width: 450px;
-  background: rgb(184, 255, 228);
+  background: rgb(197, 197, 197);
   z-index: 3;
   transform: translate(0%,-50%);
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .skill-wrap {
   width:960px;
-  background: blue;
+  background:transparent;
+  background: rgba(0, 0, 0, 0.5);
   height: 420px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-30%);
+  box-shadow: 0px 0px 13px 0px rgba(158,158,158,0.66);
 }
 
-.move-right {
-  
-}
-
-.opac-enter, .opac-leave-to {
-  transition: all 1s ease-out;
-  opacity: 0;
-}
-.opac-enter-to, .opac-leave {
-  transition: all 1s ease-in;
-  opacity: 1;
+.move-right, .move-left {
+    text-align: center;
+    text-transform: uppercase;
+    border:none;
+    font-weight: bold;
+    border-radius: 80px;
+    padding: 14px 0px;
+    min-width: 140px;
+    outline:none;
+    font-size: 14px;
+    color:white;
+    background:#f89a35;
+    cursor: pointer;
 }
 .slide {
   left: 50%;
 }
 .right-field {
-  display: block;
   position: absolute;
-  left: 0;
-  top: 0;
-  background: red;
-  width: 480px;
-  height: 300px;
+  left: 3%;
+  top: 50%;
+  width: 420px;
+  height: 320px;
+  color: rgb(255, 253, 253);
+  transform: translate(0, -50%);
 }
 .left-field {
-  display: block;
   position: absolute;
-  right: 0;
-  top: 0;
-  background: rgb(248, 233, 20);
-  width: 480px;
-  height: 300px;
+  right: 3%;
+  top: 50%;
+  width: 420px;
+  height: 320px;
+  color: rgb(255, 253, 253);
+  transform: translate(0, -50%);
+}
+.opac-enter, .opac-leave-to {
+  transition: all 0.5s ease-out;
+  opacity: 0;
+}
+.opac-enter-to, .opac-leave {
+  transition: all 0.5s ease-in;
+  opacity: 1;
 }
 </style>

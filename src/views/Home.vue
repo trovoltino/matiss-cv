@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <img class="bg" src="@/assets/images/bg-img.jpg" alt="">
     <Slider/>
     <Logo/>
   </div>
@@ -18,3 +19,15 @@ export default {
   }
 }
 </script>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.bg {
+  max-width: 100%;
+  min-height: 100vh;
+}
+</style>

@@ -21,7 +21,7 @@ export default {
 .projects {
     display: flex;
     flex-direction: column;
-    background: rgb(184, 255, 228);
+    background: rgb(197, 197, 197);
     min-width: 450px;
     max-width: 450px;
     min-height: 480px;
