@@ -23,6 +23,8 @@
       <div class="random">
         <h3>Other Skills</h3>
         <ul>
+          <li>VB.NET</li>
+          <li>Magento2</li>
           <li>Gulp</li>
           <li>Basic PhotoShop</li>
           <li>Windows/Linux</li>
@@ -51,10 +53,13 @@ li {
   list-style-type: none;
 }
   .skills {
-    background: greenyellow;
+    background: rgb(184, 255, 228);
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    min-width: 450px;
+    max-width: 450px;
+    min-height: 480px;
+    max-height: 480px;
   }
   .main-skills {
     display: flex;

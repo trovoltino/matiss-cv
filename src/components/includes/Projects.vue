@@ -19,7 +19,14 @@ export default {
 <style scoped>
 
 .projects {
-    background: red;
+    display: flex;
+    flex-direction: column;
+    background: rgb(184, 255, 228);
+    min-width: 450px;
+    max-width: 450px;
+    min-height: 480px;
+    max-height: 480px;
+    position: relative;
 }
 
 

@@ -10,10 +10,8 @@
 import Logo from '@/components/Logo.vue'
 import Slider from '@/components/Slider.vue'
 
-import ('@/assets/js/slide.js');
-
 export default {
-  name: 'logo',
+  name: 'Home',
   components: {
     Logo,
     Slider
