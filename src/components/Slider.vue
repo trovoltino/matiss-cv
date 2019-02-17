@@ -19,8 +19,6 @@
         </p>
         <button class="move-left" @click="component = 'Skill', moveRight = false">Back to CV</button>
       </div>
-      
-      
     </div>
 </template>
 
@@ -47,10 +45,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 p {
   text-align: center;
   max-width: 70%;
   margin: 40px auto;
+  font-family: Verdana; 
 }
 h2 {
   text-transform: uppercase;
@@ -64,37 +64,49 @@ h2 {
   position: relative;
   left: 30px;
   top: 50%;
-  width: 450px;
-  background: rgb(197, 197, 197);
+  width: 480px;
+  height: 480px;
+  background: url(../assets/images/full-moon.jpg);
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px silver,
+              0px 0px 30px silver,
+              0px 0px 40px silver;
   z-index: 3;
   transform: translate(0%,-50%);
   transition: all 1s ease-in-out;
 }
 .skill-wrap {
-  width:960px;
+  width:1020px;
   background:transparent;
   background: rgba(0, 0, 0, 0.5);
   height: 420px;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-30%);
+  transform: translate(-50%,-70%);
   box-shadow: 0px 0px 13px 0px rgba(158,158,158,0.66);
 }
 
 .move-right, .move-left {
     text-align: center;
     text-transform: uppercase;
-    border:none;
+    border:solid 0px rgb(235, 235, 235);
     font-weight: bold;
     border-radius: 80px;
-    padding: 14px 0px;
-    min-width: 140px;
+    padding: 18px 0px;
+    min-width: 160px;
     outline:none;
     font-size: 14px;
     color:white;
-    background:#f89a35;
+    background: #f89a35;
     cursor: pointer;
+}
+.move-left:hover, .move-right:hover {
+  background:#f1830e;
+}
+.move-left:active, .move-right:active {
+  background:#a05709;
 }
 .slide {
   left: 50%;
