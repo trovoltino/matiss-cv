@@ -52,6 +52,13 @@ p {
   max-width: 70%;
   margin: 40px auto;
 }
+h2 {
+  text-transform: uppercase;
+  font-size: 2.3em;
+  font-family:monospace;
+  text-shadow: 0px 0px 3px rgb(228, 228, 228),
+                0px 0px 3px rgb(228, 228, 228);
+}
 .slider {
   margin: 0;
   position: relative;
