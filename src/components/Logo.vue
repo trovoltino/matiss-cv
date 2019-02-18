@@ -23,44 +23,28 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-a {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 140px;
-  background: transparent;
-  height: 80px;
-  cursor: pointer;
-  transform: translate(-38%, 20%);
-  z-index: 3;
-}
+
 p {
   margin: 20px;
 }
 .logo-container {
   position: absolute;
   left: 50%;
-  top: 0%;
-  transform: translate(-50%, 0%);
+  bottom: -37%;
   font-family: 'Courgette', cursive;
   font-size: 5.5em;
   font-weight: 700;
 }
-.m-logo {
-  position: absolute;
-  transform: translate(-50%, 0%);
-}
 .m {
   position: absolute;
-  top: 50%;
+  bottom: 50%;
   left: 50%;
   width: 600px;
   height: 300px;
   background: url('../assets/images/bg-img.jpg');
   background-clip: text;
   color: transparent;
-  transform: translate(-50%, -4%);
+  transform: translate(-50%, -50%);
   animation: moveBg 72s linear infinite;
 }
 a:hover {
@@ -73,6 +57,23 @@ a:hover {
   }
   100% {
     background-position: 100% 89%;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .m {
+    position: relative;
+    width: 30px;
+    height: 40px;
+    font-size: 0.6em;
+    color: rgb(241, 241, 241);
+  }
+  .logo-container {
+    bottom: -3%;
+    left: 50%;
+    transform: translate(-110%, 0%)
+  }
+  a {
+    display: none;
   }
 }
 </style>
