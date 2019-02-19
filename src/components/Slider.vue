@@ -63,6 +63,7 @@ p {
 h2 {
   text-transform: uppercase;
   font-size: 2.3em;
+  margin: 0 4%;
   font-family:monospace;
   text-shadow: 0px 0px 3px rgb(228, 228, 228),
                 0px 0px 3px rgb(228, 228, 228);
@@ -178,6 +179,12 @@ h2 {
   }
 }
 @media only screen and (max-width: 662px) {
+  h2 {
+    margin: 6% 12%;
+  }
+  p {
+    margin: 30px auto;
+  }
   .field-wrap {
     flex-direction: column-reverse;
     align-items: center;
