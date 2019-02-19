@@ -83,6 +83,36 @@ h3 {
     justify-content: flex-start;
     align-items: center;
   }
-
+@media only screen and (max-width: 662px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    font-size: 12px;
+    font-weight: bold;
+    list-style-type: none;
+  }
+  h3 {
+    font-size: 16px;
+    font-family:Verdana ;
+    text-transform: uppercase;
+  }
+  .skills {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 260px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .main-skills {
+    margin-top:20px;
+  }
+}
 
 </style>

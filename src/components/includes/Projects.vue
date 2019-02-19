@@ -34,5 +34,23 @@ export default {
   font-size: 20px;
   
 }
+@media only screen and (max-width: 662px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: transparent;
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 320px;
+    max-height: 320px;
+  }
+  .projects a {
+    text-decoration: none;
+    font-size: 14px;
+    
+  }
+}
 
 </style>

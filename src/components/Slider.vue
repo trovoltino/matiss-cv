@@ -147,7 +147,7 @@ h2 {
   transition: all 0.5s ease-in;
   opacity: 1;
 }
-@media screen and (max-width: 1092px) {
+@media only screen and (min-width: 1092px) {
   .field-wrap {
     flex-direction: column;
     align-items: center;
@@ -164,7 +164,7 @@ h2 {
   position: relative;
   left: 50%;
   bottom: 0%;
-  width: 420px;
+  width: 320px;
   height: 420px;
   background: url(../assets/images/full-moon.jpg);
   background-position: center;
@@ -175,6 +175,42 @@ h2 {
   z-index: 3;
   transform: translate(-50%,0%);
   transition: all 1s ease-in-out;
+  }
+}
+@media only screen and (max-width: 662px) {
+  .field-wrap {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .skill-wrap {
+  width:80%;
+  height: 80%;
+  transform: translate(-50%,-50%);
+  
+  }
+  .left-field, .right-field {
+    width: 100%;
+  }
+  
+  .slider {
+  position: relative;
+  left: 50%;
+  top: 0%;
+  width: 320px;
+  height: 320px;
+  background: url(../assets/images/full-moon.jpg);
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px silver,
+              0px 0px 30px silver,
+              0px 0px 40px silver;
+  z-index: 3;
+  transform: translate(-50%,0%);
+  transition: all 1s ease-in-out;
+  }
+  .slide {
+    top: 50%;
   }
 }
 </style>
