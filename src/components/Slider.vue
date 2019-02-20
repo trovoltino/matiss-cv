@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-      <logo/>
+      <logo class="logo"/>
     </div>
 
 </template>
@@ -257,6 +257,9 @@ h2 {
   }
   .slide {
     top: 50%;
+  }
+  .logo {
+    display: none;
   }
 }
 </style>
