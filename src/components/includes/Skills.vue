@@ -60,30 +60,70 @@ h3 {
   font-family:Verdana ;
   text-transform: uppercase;
 }
+.skills {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  min-width: 480px;
+  max-width: 480px;
+  min-height: 480px;
+  max-height: 480px;
+}
+.main-skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 5px 5px;
+  margin-top: 40px;
+}
+.frontend, .backend{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media only screen and (max-width: 1050px) {
+  ul {
+    justify-content:space-evenly;
+  }
+  li {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 18px;
+  }
   .skills {
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    min-width: 480px;
-    max-width: 480px;
-    min-height: 480px;
-    max-height: 480px;
+    align-items: center;
+    min-width: 260px;
+    min-height: 340px;
+    max-height: 340px;
   }
   .main-skills {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 5px 5px;
-    margin-top: 40px;
+    margin-top:30px;
   }
-  .frontend, .backend{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+}
+@media only screen and (max-width: 760px) {
+  ul {
+    justify-content:space-evenly;
+  }
+  li {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .skills {
     align-items: center;
+    min-width: 280px;
+    min-height: 340px;
+    max-height: 340px;
   }
-@media only screen and (max-width: 662px) {
+  .main-skills {
+    margin-top:20px;
+  }
+}
+@media only screen and (max-width: 450px) {
   ul {
     display: flex;
     flex-direction: column;
@@ -98,6 +138,37 @@ h3 {
   }
   h3 {
     font-size: 16px;
+    font-family:Verdana ;
+    text-transform: uppercase;
+  }
+  .skills {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 260px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .main-skills {
+    margin-top:20px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    font-size: 10px;
+    font-weight: bold;
+    list-style-type: none;
+  }
+  h3 {
+    font-size: 14px;
     font-family:Verdana ;
     text-transform: uppercase;
   }

@@ -34,13 +34,23 @@ export default {
   font-size: 20px;
   
 }
+@media only screen and (max-width: 1050px) {
+  .projects {
+
+    min-width: 360px;
+    max-width: 360px;
+    min-height: 360px;
+    max-height: 360px;
+  }
+  .projects a {
+    text-decoration: none;
+    font-size: 16px;
+    
+  }
+}
 @media only screen and (max-width: 662px) {
   .projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background: transparent;
+
     min-width: 320px;
     max-width: 320px;
     min-height: 320px;
@@ -50,6 +60,19 @@ export default {
     text-decoration: none;
     font-size: 14px;
     
+  }
+}
+@media only screen and (max-width: 450px) {
+  .projects {
+
+    min-width: 260px;
+    max-width: 260px;
+    min-height: 260px;
+    max-height: 260px;
+  }
+  .projects a {
+    text-decoration: none;
+    font-size: 12px;
   }
 }
 
