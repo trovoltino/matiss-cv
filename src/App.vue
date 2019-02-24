@@ -1,10 +1,8 @@
 <template>
   <div id="app">
     <router-view/>
-    <div id="nav">
-      <Head/>
-
-    </div>
+    <Head/>
+    
   </div>
 </template>
 
@@ -30,19 +28,5 @@ body{
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  position: absolute;
-  bottom: 30px;
-  left: 40%;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

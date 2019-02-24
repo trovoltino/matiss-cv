@@ -2,9 +2,8 @@
   <div class="projects">
      <a href="#">MageBit</a>
      <a href="#">ScandiWeb</a>
-     <a href="#">CryptoApi</a>
       <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+      <router-link to="/crypto">CryptoApi</router-link>
   </div>
 </template>
 

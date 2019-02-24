@@ -1,31 +1,31 @@
 <template>
-    <div class="main">
-      <div class="skill-wrap">
-        <div v-bind:class="{ slide: moveRight }" class="slider">
-          <transition name="opac" mode="out-in">
-            <component v-bind:is="component"></component>
-          </transition>
+  <div class="main">
+    <div class="skill-wrap">
+      <div v-bind:class="{ slide: moveRight }" class="slider">
+        <transition name="opac" mode="out-in">
+          <component v-bind:is="component"></component>
+        </transition>
+      </div>
+      <div class="field-wrap">
+        <div class="left-field">
+          <h2 v-if="showInfo">Some of my projects</h2>
+          <h2 v-else>NO PROJECTS FOR YOU</h2>
+          <p>Here is projects source codes as most frontend functional
+            can be seen here.
+          </p>
+          <button class="move-right" @click="component = 'Project', moveRight = true">show projects</button>
         </div>
-        <div class="field-wrap">
-          <div class="left-field">
-            <h2>Some of my projects</h2>
-            <p>Here is projects source codes as most frontend functional
-              can be seen here.
-            </p>
-            <button class="move-right" @click="component = 'Project', moveRight = true">show projects</button>
-          </div>
-          <div class="right-field">
-            <h2>better show me cv</h2>
-            <p>Short descriptions of my skills,
-              would not call myself proficient in all of them.
-            </p>
-            <button class="move-left" @click="component = 'Skill', moveRight = false">Back to CV</button>
-          </div>
+        <div class="right-field">
+          <h2>better show me cv</h2>
+          <p>Short descriptions of my skills,
+            would not call myself proficient in all of them.
+          </p>
+          <button class="move-left" @click="component = 'Skill', moveRight = false">Back to CV</button>
         </div>
       </div>
-      <logo class="logo"/>
     </div>
-
+    <logo class="logo"/>
+  </div>
 </template>
 
 <script>
@@ -46,6 +46,12 @@ export default {
     return {
       component: 'Skill',
       moveRight: false,
+    }
+  },
+  props: {
+    showInfo: {
+      type: Boolean,
+      required: true,
     }
   }
 }
@@ -87,7 +93,6 @@ h2 {
 }
 .skill-wrap {
   width:920px;
-  background:transparent;
   background: rgba(0, 0, 0, 0.5);
   height: 420px;
   position: absolute;
