@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "animejs": "^3.0.1",
+    "axios": "^0.18.0",
     "vue": "^2.5.22",
     "vue-animejs": "^2.1.1",
+    "vue-axios": "^2.1.4",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
