@@ -1,7 +1,9 @@
 <template>
   <div class="crypto">
-    <h1>Crytpo information daily</h1>
-    <h2>{{cryptoData}}</h2>
+    <div class="crypto-wrap">
+      <h1>Crytpo information daily</h1>
+      <h2>{{cryptoData}}</h2>
+    </div>
   </div>
 </template>
 
@@ -27,4 +29,13 @@ export default {
 
 <style>
 
+.crypto-wrap{
+  position: absolute;
+  top: 10%;
+  left:5%;
+  border: 3px gray groove;
+  width: 600px;
+  height: 400px;
+  overflow: auto;
+}
 </style>
