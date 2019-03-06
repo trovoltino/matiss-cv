@@ -15,12 +15,12 @@ app.use('/api/posts', posts);
 // Handle Production
 
 if(process.env.NODE_ENV === 'production') {
-  app.use(express.static(__dirname + '/dist/'));
+  app.use(express.static(__dirname + '/../dist/'));
 }
 
 // Handle SPA
 
-app.get(/.*/, (req, res) => res.sendFile(__dirname + '/dist/index.html'));
+app.get(/.*/, (req, res) => res.sendFile(__dirname + '/../dist/index.html'));
 
 const port = process.env.PORT || 5000;
 
